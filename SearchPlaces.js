@@ -98,21 +98,11 @@ export  default class SearchPlaces extends Component {
     ListEmpty = () => {
         return (
             //View to show when list is empty
-            <View style={{
-                width: '100%', height: '100%',
-                flexDirection: 'column', justifyContent: 'center', alignItems: 'center'
-            }}>
-                <Image source={require('./vIcons/noSearchicon.png')} style={{
-                    width: 120, height: 120,
+            <View style={{width: '100%', height: '100%',flexDirection: 'column',
+            justifyContent: 'center', alignItems: 'center'}}>
+                <Image source={require('./vIcons/noSearchicon.png')} style={{width: 120, height: 120,
                     justifyContent: 'center', alignItems: 'center'
                 }} />
-
-                <Text style={{
-                    marginTop: 40,
-                    fontWeight: 'bold', textAlign: 'center', fontSize: 15,
-                    justifyContent: 'center', alignItems: 'center'
-                }}> Search for any places</Text>
-
             </View>
         );
     };
