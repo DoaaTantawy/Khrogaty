@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {ImageBackground, Text, View} from 'react-native';
-import { Container, Header, Left, Body, Right, Button, Icon, Title } from 'native-base';
+import {Header, Left, Body, Right, Button, Icon, Title } from 'native-base';
 import { withNavigation } from 'react-navigation';
 
 type Props = {};
