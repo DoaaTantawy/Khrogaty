@@ -33,7 +33,7 @@ export default class Splash extends Component<Props> {
                 if(val === "yes"){
                     this.props.navigation.navigate('tabs');
                 }else{
-                    this.props.navigation.navigate('WelcomeScreen');
+                    this.props.navigation.navigate('appStackNavigator');
                 }
 
             }, 1000);
