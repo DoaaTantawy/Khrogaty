@@ -70,12 +70,22 @@ const tabNavigator =createBottomTabNavigator({
 tabNavigator.navigationOptions = {
   // Hide the header from AppNavigator stack
   header: null,
-};
-const appNavigator =createStackNavigator({
-      Splash:Splash,
-      WelcomeScreen: WelcomeScreen,
+const appStackNavigator =createStackNavigator({
       tabs:{screen: tabNavigator},
       'PlaceDetailsWithMaps': PlaceDetailsWithMaps,
     }
 );
-export default createAppContainer(appNavigator);
+appStackNavigator.navigationOptions = {
+    // Hide the header from AppNavigator stack
+    header: null,
+};
+
+const appSwitchNavigator = createSwitchNavigator(
+    {
+        Splash:Splash,
+        WelcomeScreen: WelcomeScreen,
+        'appStackNavigator':{screen: appStackNavigator},
+    }
+)
+
+export default createAppContainer(appSwitchNavigator);
