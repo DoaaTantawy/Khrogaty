@@ -158,7 +158,7 @@ export default class WelcomeScreen extends Component <Props> {
                         flexDirection: "column", flex: 1, position: "absolute", bottom: '2%' ,left:'37%',
                         justifyContent: 'center', padding: '1%' }}
                             onPress={() => {
-                                this.props.navigation.navigate('tabs');
+                                this.props.navigation.navigate('appStackNavigator');
                                 {this.saveData()}
                             }}
                     ><Text> Start </Text></Button>
